@@ -69,10 +69,10 @@ export function CreateDialog({ onClose, onCreate }: CreateDialogProps) {
             <div className="grid grid-cols-2 gap-3 sm:gap-4">
               <Button
                 type="button"
-                size='lg'
+                size="lg"
                 variant={type === 'folder' ? 'primary' : 'secondary'}
                 onClick={() => setType('folder')}
-                className="relative overflow-hidden flex items-center"
+                className="relative flex items-center overflow-hidden"
               >
                 <motion.div
                   animate={{ 
@@ -85,10 +85,10 @@ export function CreateDialog({ onClose, onCreate }: CreateDialogProps) {
               </Button>
               <Button
                 type="button"
-                size='lg'
+                size="lg"
                 variant={type === 'file' ? 'primary' : 'secondary'}
                 onClick={() => setType('file')}
-                className="relative overflow-hidden flex items-center"
+                className="relative flex items-center overflow-hidden"
               >
                 <motion.div
                   animate={{ 
